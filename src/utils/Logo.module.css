@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.logoImage {
+  width: 150px; /* Adjust size as needed */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.heading {
+  font-size: 18px; /* Adjust size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Text color */
+}
+
+.subheading {
+  font-size: 14px;
+  color: #666; /* Light gray for contrast */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.hrLong {
+  width: 80%; /* Adjust width for a longer line */
+  max-width: 600px; /* Limit max width */
+  height: 1px; /* Thin line */
+  background-color: #333; /* Line color */
+  margin: 20px auto; /* Space above and below, centered horizontally */
+  border: none; /* Remove border */
+}

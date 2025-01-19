@@ -1,0 +1,18 @@
+.blogSection {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between the blogs */
+  padding: 40px; /* Add padding around the section */
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the section */
+}
+
+.subheading {
+  text-align: center; /* Center-align the subheading */
+  font-size: 1.2rem; /* Reduced font size */
+  font-family: "Times New Roman", Times, serif; /* Newspaper-style font */
+  margin-bottom: 20px; /* Add spacing below the subheading */
+}

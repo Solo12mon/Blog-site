@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Links hover style */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Global layout */
+header,
+nav,
+/* footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+} */
+
+h1,
+h2,
+p {
+  margin: 10px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #000;
+}

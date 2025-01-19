@@ -1,0 +1,213 @@
+/* General link styles */
+a {
+  text-decoration: none; /* Remove default underline */
+  outline: none; /* Remove focus outline */
+  border: none; /* Just in case there's a border */
+}
+
+a:focus,
+a:hover {
+  text-decoration: none; /* Prevent underline on hover or focus */
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.separator {
+  width: 100%;
+  height: 1px; /* Adjust thickness */
+  background-color: #eaeaea; /* Light gray color to match the design */
+  margin: 20px 0; /* Add spacing above and below the line */
+  border: none; /* Ensure no borders interfere */
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+/* Underline effect for navigation links only */
+.navLink:hover::after,
+.navLink.active::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: black;
+}
+
+/* Logo (h1) styles - No underline */
+.logo h1 {
+  text-decoration: none; /* Prevent underline */
+  outline: none; /* Remove focus outline */
+  border: none; /* Ensure no border is applied */
+  color: black; /* Set desired text color */
+  position: relative;
+}
+
+.logo h1:hover {
+  text-decoration: none; /* Prevent underline on hover */
+}
+
+/* Hamburger Button - Hidden on desktop */
+.menuBtn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.closeButton {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+/* Mobile styles */
+
+/* Hide navigation links by default */
+/* Responsive styles for mobile */
+/* Navigation styles for smaller screens */
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden initially */
+    height: 100vh;
+    width: 300px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .nav.active {
+    right: 0; /* Slide into view */
+  }
+
+  /* Navigation links */
+  .navLink {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent; /* Default: no background */
+  }
+
+  /* Remove blue background on click or focus */
+  .navLink:focus,
+  .navLink:active {
+    background-color: transparent; /* Remove background color */
+    outline: none; /* Remove focus outline */
+  }
+
+  /* Hover effect */
+  .navLink:hover {
+    background-color: #e0e0e0; /* Light gray hover effect */
+    color: black; /* Keep text black */
+  }
+
+  /* Close button styles */
+  .closeButton {
+    align-self: flex-end;
+    font-size: 2rem;
+    color: black; /* Black close button */
+    cursor: pointer;
+    display: block; /* Ensure it displays in the media query */
+  }
+
+  /* Hamburger button */
+  .menuBtn {
+    display: block;
+  }
+}
+
+/* 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #eaeaea;
+    font-family: 'Times New Roman', serif;
+  }
+  
+  .logo {
+    text-decoration: none;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLink {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .navLink:hover {
+    text-decoration: none;
+  }
+  
+  .navLink::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLink:hover::after {
+    background-color: black;
+  }
+  
+  .active::after {
+    background-color: black;
+  }
+   */
